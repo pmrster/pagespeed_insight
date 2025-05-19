@@ -12,7 +12,7 @@ This repository is simple app to get website performance (lighthouse score) for 
 ## Features
 - **Login** : restricts access to users with a valid app key
 - **Mobile performace** : display website lighthouse score and mobile screenshot for your website
-- **Desktop performace** : display website lighthouse score and desktop screenshot for your website\
+- **Desktop performace** : display website lighthouse score and desktop screenshot for your website
 
 _Note : since pagespeed has excluded the PWA score from their reports, this project aligns with pagespeed's current metrics_
 

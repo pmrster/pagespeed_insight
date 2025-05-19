@@ -29,8 +29,6 @@ st.header('💻:gray[Get your] :blue[_Website Performance_] :gray[from] :blue[_P
 if input_key  == app_token:
     print("start time from main page: ",datetime.now().strftime('%Y-%m-%d, %H:%M:%S'))
 
-    st.caption("update: 2025.05.19 4:02PM")
-
     user_website = st.text_input(label="Insert your website url with `https://...`", value="https://medium.com")
     get_button = st.button(label="Get insight!",type="primary")
     
@@ -70,7 +68,10 @@ if input_key  == app_token:
         with container2:
             with st.container(border=True):
                 with st.spinner("Running desktop performance.."):
+
                     st.session_state["ps_desktop"] = GetPageSpeedInsight(website=user_website, device="desktop").get_insight()
+
+                        
                     if st.session_state["ps_desktop"]:
                         get_desktop_insight = st.session_state["ps_desktop"]
                         
@@ -91,7 +92,7 @@ if input_key  == app_token:
                             # st.subheader(f"**Best Practices:** {get_desktop_insight['best_practices_score']}" )
                             # st.subheader(f"**SEO:** {get_desktop_insight['seo_score']}" )
                 
-            
+        print("end...")
 else:
     st.write("please fill a correct key")
     login_modal()    

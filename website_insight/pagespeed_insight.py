@@ -55,3 +55,4 @@ class GetPageSpeedInsight:
 
         except Exception as e:
             print(f"error on page speed calling getting insight: {e}")
+            st.write(f"got and error ({e}), please recheck your website url")

@@ -1,4 +1,5 @@
-# Get website performance using pagespeeed insight
+# Simple pagespeeed insight💻
+
 This repository is simple app to get website performance (lighthouse score) for your website using python, streamlit, and pagespeed API. Additionally, there is login modal to access the feature.
 
 
@@ -13,14 +14,14 @@ This repository is simple app to get website performance (lighthouse score) for 
 - **Mobile performace** : display website lighthouse score and mobile screenshot for your website
 - **Desktop performace** : display website lighthouse score and desktop screenshot for your website\
 
-_Note : since Pagespeed has excluded the PWA score from their reports, this project aligns with PageSpeed's current metrics_
+_Note : since pagespeed has excluded the PWA score from their reports, this project aligns with pagespeed's current metrics_
+
 
 
 
 ## Demo
-<video max-height="480" autoplay>
-    <source src="demo.mp4" type="video/mp4">
-</video>
+<img src="demo.gif" alt="sample" max-height="500"/>
+
 
 
 
